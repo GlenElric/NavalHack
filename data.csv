@@ -1,0 +1,923 @@
+filename,text
+indian-navy-air-defense-exercise-areas_01-25.md,"# Indian Navy: Naval Air Defense Exercise Areas
+
+1. ```json
+   {
+     ""name"": ""Arabian Sea Fleet Air Defense Zone"",
+     ""type"": ""Carrier Battle Group Air Defense Training Area"",
+     ""significance"": ""Practice of coordinated fleet air defense with carrier-based aircraft"",
+     ""coordinates"": [
+       {""lat"": 15.0, ""lon"": 65.0},
+       {""lat"": 15.0, ""lon"": 70.0},
+       {""lat"": 20.0, ""lon"": 70.0},
+       {""lat"": 20.0, ""lon"": 65.0}
+     ]
+   }
+   ```
+
+2. ```json
+   {
+     ""name"": ""Eastern Seaboard Integrated Air Defense Sector"",
+     ""type"": ""Multi-Layer Air Defense Exercise Zone"",
+     ""significance"": ""Coordination of ship-based and coastal air defense systems"",
+     ""coordinates"": [
+       {""lat"": 15.0, ""lon"": 82.0},
+       {""lat"": 15.0, ""lon"": 85.0},
+       {""lat"": 19.0, ""lon"": 85.0},
+       {""lat"": 19.0, ""lon"": 82.0}
+     ]
+   }
+   ```
+
+3. ```json
+   {
+     ""name"": ""Lakshadweep Islands Air Defense Perimeter"",
+     ""type"": ""Island Chain Air Defense Training Area"",
+     ""significance"": ""Practice of air defense for scattered island territories"",
+     ""coordinates"": [
+       {""lat"": 8.0, ""lon"": 72.0},
+       {""lat"": 8.0, ""lon"": 74.0},
+       {""lat"": 12.0, ""lon"": 74.0},
+       {""lat"": 12.0, ""lon"": 72.0}
+     ]
+   }
+   ```
+
+4. ```json
+   {
+     ""name"": ""Andaman and Nicobar Air Defense Exercise Zone"",
+     ""type"": ""Long-Range Maritime Air Defense Area"",
+     ""significance"": ""Training in extended range air defense for remote island chains"",
+     ""coordinates"": [
+       {""lat"": 6.0, ""lon"": 92.0},
+       {""lat"": 6.0, ""lon"": 94.0},
+       {""lat"": 14.0, ""lon"": 94.0},
+       {""lat"": 14.0, ""lon"": 92.0}
+     ]
+   }
+   ```
+
+5. ```json
+   {
+     ""name"": ""Gujarat Coast Air Defense Sector"",
+     ""type"": ""Coastal Air Defense Training Zone"",
+     ""significance"": ""Practice of defending strategic coastal installations from air threats"",
+     ""coordinates"": [
+       {""lat"": 20.0, ""lon"": 68.0},
+       {""lat"": 20.0, ""lon"": 72.0},
+       {""lat"": 23.0, ""lon"": 72.0},
+       {""lat"": 23.0, ""lon"": 68.0}
+     ]
+   }
+   ```
+
+6. ```json
+   {
+     ""name"": ""Bay of Bengal Fleet Air Defense Training Area"",
+     ""type"": ""Large-Scale Naval Air Defense Exercise Zone"",
+     ""significance"": ""Coordination of multiple ship and aircraft groups for air defense"",
+     ""coordinates"": [
+       {""lat"": 12.0, ""lon"": 85.0},
+       {""lat"": 12.0, ""lon"": 90.0},
+       {""lat"": 16.0, ""lon"": 90.0},
+       {""lat"": 16.0, ""lon"": 85.0}
+     ]
+   }
+   ```
+
+7. ```json
+   {
+     ""name"": ""Mumbai High Offshore Air Defense Zone"",
+     ""type"": ""Critical Infrastructure Air Defense Area"",
+     ""significance"": ""Training in air defense of offshore oil and gas installations"",
+     ""coordinates"": [
+       {""lat"": 19.0, ""lon"": 71.0},
+       {""lat"": 19.0, ""lon"": 72.5},
+       {""lat"": 20.5, ""lon"": 72.5},
+       {""lat"": 20.5, ""lon"": 71.0}
+     ]
+   }
+   ```
+
+8. ```json
+   {
+     ""name"": ""Visakhapatnam Naval Base Air Defense Sector"",
+     ""type"": ""Strategic Asset Air Defense Training Zone"",
+     ""significance"": ""Practice of multi-layered air defense for key naval facilities"",
+     ""coordinates"": [
+       {""lat"": 17.0, ""lon"": 83.0},
+       {""lat"": 17.0, ""lon"": 84.0},
+       {""lat"": 18.0, ""lon"": 84.0},
+       {""lat"": 18.0, ""lon"": 83.0}
+     ]
+   }
+   ```
+
+9. ```json
+   {
+     ""name"": ""Kochi Naval Air Station Defense Exercise Area"",
+     ""type"": ""Airfield Defense Training Zone"",
+     ""significance"": ""Simulations of defending naval air bases from aerial attacks"",
+     ""coordinates"": [
+       {""lat"": 9.5, ""lon"": 76.0},
+       {""lat"": 9.5, ""lon"": 76.5},
+       {""lat"": 10.0, ""lon"": 76.5},
+       {""lat"": 10.0, ""lon"": 76.0}
+     ]
+   }
+   ```
+
+10. ```json
+    {
+      ""name"": ""Karwar Naval Base Air Defense Sector"",
+      ""type"": ""Advanced Naval Facility Air Defense Zone"",
+      ""significance"": ""Training in protecting modern naval infrastructure from air threats"",
+      ""coordinates"": [
+        {""lat"": 14.5, ""lon"": 74.0},
+        {""lat"": 14.5, ""lon"": 74.5},
+        {""lat"": 15.0, ""lon"": 74.5},
+        {""lat"": 15.0, ""lon"": 74.0}
+      ]
+    }
+    ```
+
+11. ```json
+    {
+     ""name"": ""Chilika Air Defense Training Sector"",
+     ""type"": ""Low-Altitude Air Defense Exercise Zone"",
+     ""significance"": ""Practice of countering low-flying aircraft and cruise missiles"",
+     ""coordinates"": [
+       {""lat"": 19.5, ""lon"": 85.0},
+       {""lat"": 19.5, ""lon"": 85.5},
+       {""lat"": 20.0, ""lon"": 85.5},
+       {""lat"": 20.0, ""lon"": 85.0}
+     ]
+    }
+    ```
+
+12. ```json
+    {
+     ""name"": ""Port Blair Air Defense Perimeter"",
+     ""type"": ""Island Capital Air Defense Training Area"",
+     ""significance"": ""Exercises in defending key administrative centers on strategic islands"",
+     ""coordinates"": [
+       {""lat"": 11.5, ""lon"": 92.5},
+       {""lat"": 11.5, ""lon"": 93.0},
+       {""lat"": 12.0, ""lon"": 93.0},
+       {""lat"": 12.0, ""lon"": 92.5}
+     ]
+    }
+    ```
+
+13. ```json
+    {
+     ""name"": ""Kakinada Offshore Air Defense Zone"",
+     ""type"": ""Gas Field Air Defense Training Area"",
+     ""significance"": ""Practice of air defense for offshore energy infrastructure"",
+     ""coordinates"": [
+       {""lat"": 16.5, ""lon"": 82.0},
+       {""lat"": 16.5, ""lon"": 83.0},
+       {""lat"": 17.5, ""lon"": 83.0},
+       {""lat"": 17.5, ""lon"": 82.0}
+     ]
+    }
+    ```
+
+14. ```json
+    {
+     ""name"": ""Goa Naval Aviation Air Defense Sector"",
+     ""type"": ""Maritime Patrol Aircraft Base Defense Zone"",
+     ""significance"": ""Training in protecting naval air assets and facilities"",
+     ""coordinates"": [
+       {""lat"": 15.0, ""lon"": 73.5},
+       {""lat"": 15.0, ""lon"": 74.0},
+       {""lat"": 15.5, ""lon"": 74.0},
+       {""lat"": 15.5, ""lon"": 73.5}
+     ]
+    }
+    ```
+
+15. ```json
+    {
+     ""name"": ""Dwarka Point Air Defense Exercise Area"",
+     ""type"": ""Coastal Radar Station Defense Zone"",
+     ""significance"": ""Practice of integrating coastal radar with air defense systems"",
+     ""coordinates"": [
+       {""lat"": 22.0, ""lon"": 68.5},
+       {""lat"": 22.0, ""lon"": 69.0},
+       {""lat"": 22.5, ""lon"": 69.0},
+       {""lat"": 22.5, ""lon"": 68.5}
+     ]
+    }
+    ```
+
+16. ```json
+    {
+     ""name"": ""Car Nicobar Air Base Defense Sector"",
+     ""type"": ""Forward Airfield Protection Training Zone"",
+     ""significance"": ""Exercises in defending remote, strategic air bases"",
+     ""coordinates"": [
+       {""lat"": 9.0, ""lon"": 92.5},
+       {""lat"": 9.0, ""lon"": 93.0},
+       {""lat"": 9.5, ""lon"": 93.0},
+       {""lat"": 9.5, ""lon"": 92.5}
+     ]
+    }
+    ```
+
+17. ```json
+    {
+     ""name"": ""Kalpakkam Nuclear Facility Air Defense Zone"",
+     ""type"": ""Critical National Asset Air Defense Area"",
+     ""significance"": ""Training in air defense of nuclear installations near coast"",
+     ""coordinates"": [
+       {""lat"": 12.5, ""lon"": 80.0},
+       {""lat"": 12.5, ""lon"": 80.5},
+       {""lat"": 13.0, ""lon"": 80.5},
+       {""lat"": 13.0, ""lon"": 80.0}
+     ]
+    }
+    ```
+
+18. ```json
+    {
+     ""name"": ""Porbandar Air Defense Exercise Sector"",
+     ""type"": ""Forward Operating Base Air Defense Zone"",
+     ""significance"": ""Practice of air defense for naval detachments and forward bases"",
+     ""coordinates"": [
+       {""lat"": 21.5, ""lon"": 69.5},
+       {""lat"": 21.5, ""lon"": 70.0},
+       {""lat"": 22.0, ""lon"": 70.0},
+       {""lat"": 22.0, ""lon"": 69.5}
+     ]
+    }
+    ```
+
+19. ```json
+    {
+     ""name"": ""Sundarbans Delta Air Defense Training Area"",
+     ""type"": ""Low-Level Air Intrusion Defense Zone"",
+     ""significance"": ""Training in detecting and countering low-altitude air threats in complex terrain"",
+     ""coordinates"": [
+       {""lat"": 21.5, ""lon"": 88.5},
+       {""lat"": 21.5, ""lon"": 89.5},
+       {""lat"": 22.5, ""lon"": 89.5},
+       {""lat"": 22.5, ""lon"": 88.5}
+     ]
+    }
+    ```
+
+20. ```json
+    {
+     ""name"": ""Minicoy Island Air Defense Sector"",
+     ""type"": ""Remote Island Air Defense Training Zone"",
+     ""significance"": ""Practice of air defense for isolated, strategic island outposts"",
+     ""coordinates"": [
+       {""lat"": 8.0, ""lon"": 72.5},
+       {""lat"": 8.0, ""lon"": 73.5},
+       {""lat"": 9.0, ""lon"": 73.5},
+       {""lat"": 9.0, ""lon"": 72.5}
+     ]
+    }
+    ```
+
+21. ```json
+    {
+     ""name"": ""Paradip Port Air Defense Exercise Area"",
+     ""type"": ""Major Port Facility Air Defense Zone"",
+     ""significance"": ""Training in air defense of critical maritime trade infrastructure"",
+     ""coordinates"": [
+       {""lat"": 20.0, ""lon"": 86.5},
+       {""lat"": 20.0, ""lon"": 87.0},
+       {""lat"": 20.5, ""lon"": 87.0},
+       {""lat"": 20.5, ""lon"": 86.5}
+     ]
+    }
+    ```
+
+22. ```json
+    {
+     ""name"": ""Lakshadweep Sea Extended Air Defense Zone"",
+     ""type"": ""Over-the-Horizon Air Defense Training Area"",
+     ""significance"": ""Practice of long-range air threat detection and engagement"",
+     ""coordinates"": [
+       {""lat"": 10.0, ""lon"": 70.0},
+       {""lat"": 10.0, ""lon"": 74.0},
+       {""lat"": 14.0, ""lon"": 74.0},
+       {""lat"": 14.0, ""lon"": 70.0}
+     ]
+    }
+    ```
+
+23. ```json
+    {
+     ""name"": ""Andaman Sea Air-Sea Integration Zone"",
+     ""type"": ""Combined Air-Naval Defense Exercise Area"",
+     ""significance"": ""Training in coordinated air and naval defense operations"",
+     ""coordinates"": [
+       {""lat"": 11.0, ""lon"": 92.0},
+       {""lat"": 11.0, ""lon"": 94.0},
+       {""lat"": 13.0, ""lon"": 94.0},
+       {""lat"": 13.0, ""lon"": 92.0}
+     ]
+    }
+    ```
+
+24. ```json
+    {
+     ""name"": ""Kavatti Island Radar Picket Training Zone"",
+     ""type"": ""Early Warning Radar Defense Exercise Area"",
+     ""significance"": ""Practice of integrating forward radar pickets with air defense network"",
+     ""coordinates"": [
+       {""lat"": 10.5, ""lon"": 72.5},
+       {""lat"": 10.5, ""lon"": 73.0},
+       {""lat"": 11.0, ""lon"": 73.0},
+       {""lat"": 11.0, ""lon"": 72.5}
+     ]
+    }
+    ```
+
+25. ```json
+    {
+     ""name"": ""Nicobar Islands Southern Air Defense Sector"",
+     ""type"": ""Strategic Chokepoint Air Defense Zone"",
+     ""significance"": ""Training in air defense of critical maritime passages"",
+     ""coordinates"": [
+       {""lat"": 6.5, ""lon"": 93.5},
+       {""lat"": 6.5, ""lon"": 94.5},
+       {""lat"": 7.5, ""lon"": 94.5},
+       {""lat"": 7.5, ""lon"": 93.5}
+     ]
+    }
+    ```
+
+"
+indian-navy-air-patrol-zones_01-05.md,"# Indian Navy: Naval Air Patrol Zones
+
+1. ```json
+   {
+     ""name"": ""Arabian Sea Western Sector Air Patrol"",
+     ""type"": ""Long-Range Maritime Reconnaissance Zone"",
+     ""significance"": ""Extended surveillance of western approaches to Indian waters"",
+     ""coordinates"": [
+       {""lat"": 15.0, ""lon"": 60.0},
+       {""lat"": 15.0, ""lon"": 68.0},
+       {""lat"": 20.0, ""lon"": 68.0},
+       {""lat"": 20.0, ""lon"": 60.0}
+     ]
+   }
+   ```
+
+2. ```json
+   {
+     ""name"": ""Bay of Bengal Eastern Sector Air Patrol"",
+     ""type"": ""Wide-Area Maritime Surveillance Zone"",
+     ""significance"": ""Monitoring of eastern seaboard and approaches"",
+     ""coordinates"": [
+       {""lat"": 10.0, ""lon"": 85.0},
+       {""lat"": 10.0, ""lon"": 90.0},
+       {""lat"": 18.0, ""lon"": 90.0},
+       {""lat"": 18.0, ""lon"": 85.0}
+     ]
+   }
+   ```
+
+3. ```json
+   {
+     ""name"": ""Lakshadweep Sea Air Surveillance Sector"",
+     ""type"": ""Island Territory and EEZ Patrol Zone"",
+     ""significance"": ""Aerial monitoring of Lakshadweep Islands and surrounding waters"",
+     ""coordinates"": [
+       {""lat"": 8.0, ""lon"": 71.0},
+       {""lat"": 8.0, ""lon"": 75.0},
+       {""lat"": 14.0, ""lon"": 75.0},
+       {""lat"": 14.0, ""lon"": 71.0}
+     ]
+   }
+   ```
+
+4. ```json
+   {
+     ""name"": ""Andaman Sea Air Reconnaissance Area"",
+     ""type"": ""Far Eastern Maritime Patrol Zone"",
+     ""significance"": ""Surveillance of Andaman Sea and western approaches to Malacca Strait"",
+     ""coordinates"": [
+       {""lat"": 6.0, ""lon"": 91.0},
+       {""lat"": 6.0, ""lon"": 96.0},
+       {""lat"": 14.0, ""lon"": 96.0},
+       {""lat"": 14.0, ""lon"": 91.0}
+     ]
+   }
+   ```
+
+5. ```json
+   {
+     ""name"": ""Gujarat Coastal Air Patrol Sector"",
+     ""type"": ""Northwestern Maritime Border Surveillance Zone"",
+     ""significance"": ""Aerial monitoring of India-Pakistan maritime border and approaches"",
+     ""coordinates"": [
+       {""lat"": 20.0, ""lon"": 68.0},
+       {""lat"": 20.0, ""lon"": 72.0},
+       {""lat"": 24.0, ""lon"": 72.0},
+       {""lat"": 24.0, ""lon"": 68.0}
+     ]
+   }
+   ```"
+indian-navy-air-patrol-zones_01-05.md,"# Indian Navy: Naval Air Patrol Zones
+
+1. ```json
+   {
+     ""name"": ""Arabian Sea Western Sector Air Patrol"",
+     ""type"": ""Long-Range Maritime Reconnaissance Zone"",
+     ""significance"": ""Extended surveillance of western approaches to Indian waters"",
+     ""coordinates"": [
+       {""lat"": 15.0, ""lon"": 60.0},
+       {""lat"": 15.0, ""lon"": 68.0},
+       {""lat"": 20.0, ""lon"": 68.0},
+       {""lat"": 20.0, ""lon"": 60.0}
+     ]
+   }
+   ```
+
+2. ```json
+   {
+     ""name"": ""Bay of Bengal Eastern Sector Air Patrol"",
+     ""type"": ""Wide-Area Maritime Surveillance Zone"",
+     ""significance"": ""Monitoring of eastern seaboard and approaches"",
+     ""coordinates"": [
+       {""lat"": 10.0, ""lon"": 85.0},
+       {""lat"": 10.0, ""lon"": 90.0},
+       {""lat"": 18.0, ""lon"": 90.0},
+       {""lat"": 18.0, ""lon"": 85.0}
+     ]
+   }
+   ```
+
+3. ```json
+   {
+     ""name"": ""Lakshadweep Sea Air Surveillance Sector"",
+     ""type"": ""Island Territory and EEZ Patrol Zone"",
+     ""significance"": ""Aerial monitoring of Lakshadweep Islands and surrounding waters"",
+     ""coordinates"": [
+       {""lat"": 8.0, ""lon"": 71.0},
+       {""lat"": 8.0, ""lon"": 75.0},
+       {""lat"": 14.0, ""lon"": 75.0},
+       {""lat"": 14.0, ""lon"": 71.0}
+     ]
+   }
+   ```
+
+4. ```json
+   {
+     ""name"": ""Andaman Sea Air Reconnaissance Area"",
+     ""type"": ""Far Eastern Maritime Patrol Zone"",
+     ""significance"": ""Surveillance of Andaman Sea and western approaches to Malacca Strait"",
+     ""coordinates"": [
+       {""lat"": 6.0, ""lon"": 91.0},
+       {""lat"": 6.0, ""lon"": 96.0},
+       {""lat"": 14.0, ""lon"": 96.0},
+       {""lat"": 14.0, ""lon"": 91.0}
+     ]
+   }
+   ```
+
+5. ```json
+   {
+     ""name"": ""Gujarat Coastal Air Patrol Sector"",
+     ""type"": ""Northwestern Maritime Border Surveillance Zone"",
+     ""significance"": ""Aerial monitoring of India-Pakistan maritime border and approaches"",
+     ""coordinates"": [
+       {""lat"": 20.0, ""lon"": 68.0},
+       {""lat"": 20.0, ""lon"": 72.0},
+       {""lat"": 24.0, ""lon"": 72.0},
+       {""lat"": 24.0, ""lon"": 68.0}
+     ]
+   }
+   ```"
+indian-navy-air-patrol-zones_01-05.md,"# Indian Navy: Naval Air Patrol Zones
+
+1. ```json
+   {
+     ""name"": ""Arabian Sea Western Sector Air Patrol"",
+     ""type"": ""Long-Range Maritime Reconnaissance Zone"",
+     ""significance"": ""Extended surveillance of western approaches to Indian waters"",
+     ""coordinates"": [
+       {""lat"": 15.0, ""lon"": 60.0},
+       {""lat"": 15.0, ""lon"": 68.0},
+       {""lat"": 20.0, ""lon"": 68.0},
+       {""lat"": 20.0, ""lon"": 60.0}
+     ]
+   }
+   ```
+
+2. ```json
+   {
+     ""name"": ""Bay of Bengal Eastern Sector Air Patrol"",
+     ""type"": ""Wide-Area Maritime Surveillance Zone"",
+     ""significance"": ""Monitoring of eastern seaboard and approaches"",
+     ""coordinates"": [
+       {""lat"": 10.0, ""lon"": 85.0},
+       {""lat"": 10.0, ""lon"": 90.0},
+       {""lat"": 18.0, ""lon"": 90.0},
+       {""lat"": 18.0, ""lon"": 85.0}
+     ]
+   }
+   ```
+
+3. ```json
+   {
+     ""name"": ""Lakshadweep Sea Air Surveillance Sector"",
+     ""type"": ""Island Territory and EEZ Patrol Zone"",
+     ""significance"": ""Aerial monitoring of Lakshadweep Islands and surrounding waters"",
+     ""coordinates"": [
+       {""lat"": 8.0, ""lon"": 71.0},
+       {""lat"": 8.0, ""lon"": 75.0},
+       {""lat"": 14.0, ""lon"": 75.0},
+       {""lat"": 14.0, ""lon"": 71.0}
+     ]
+   }
+   ```
+
+4. ```json
+   {
+     ""name"": ""Andaman Sea Air Reconnaissance Area"",
+     ""type"": ""Far Eastern Maritime Patrol Zone"",
+     ""significance"": ""Surveillance of Andaman Sea and western approaches to Malacca Strait"",
+     ""coordinates"": [
+       {""lat"": 6.0, ""lon"": 91.0},
+       {""lat"": 6.0, ""lon"": 96.0},
+       {""lat"": 14.0, ""lon"": 96.0},
+       {""lat"": 14.0, ""lon"": 91.0}
+     ]
+   }
+   ```
+
+5. ```json
+   {
+     ""name"": ""Gujarat Coastal Air Patrol Sector"",
+     ""type"": ""Northwestern Maritime Border Surveillance Zone"",
+     ""significance"": ""Aerial monitoring of India-Pakistan maritime border and approaches"",
+     ""coordinates"": [
+       {""lat"": 20.0, ""lon"": 68.0},
+       {""lat"": 20.0, ""lon"": 72.0},
+       {""lat"": 24.0, ""lon"": 72.0},
+       {""lat"": 24.0, ""lon"": 68.0}
+     ]
+   }
+   ```"
+maritime-dataset-v1.md,"1. ```
+   Date: 2024-10-20
+   Time: 14:30 UTC
+   Location: Patrol Vessel Alpha
+   Report: Cargo vessel observed at 13Â°15'N, 71Â°30'W. Heading 045Â°, speed 12 knots. No suspicious activity.
+   ```
+
+2. ```
+   Date: 2024-10-21
+   Time: 08:45 UTC
+   Location: Coastal Station Bravo
+   Report: Two fishing vessels spotted 3 nautical miles offshore. Coordinates 12Â°50'N, 70Â°15'W. Stationary.
+   ```
+
+3. ```
+   Date: 2024-10-22
+   Time: 22:15 UTC
+   Location: Aerial Patrol Charlie
+   Report: Unidentified fast-moving craft at 13Â°05'N, 71Â°10'W. Heading 270Â°, estimated speed 35 knots.
+   ```
+
+4. ```
+   Date: 2024-10-23
+   Time: 11:00 UTC
+   Location: Submarine Delta
+   Report: Large underwater contact detected at 12Â°40'N, 70Â°55'W. Moving slowly, depth 200 meters.
+   ```
+
+5. ```
+   Date: 2024-10-24
+   Time: 16:20 UTC
+   Location: Patrol Vessel Echo
+   Report: Cruise ship ""Ocean Star"" observed entering restricted zone at 13Â°30'N, 71Â°45'W. Advised to change course.
+   ```
+
+6. ```
+   Date: 2024-10-25
+   Time: 03:10 UTC
+   Location: Radar Station Foxtrot
+   Report: Multiple small contacts detected 20 nautical miles east of Port Xavier. Possible fishing fleet.
+   ```
+
+7. ```
+   Date: 2024-10-26
+   Time: 19:55 UTC
+   Location: Patrol Vessel Golf
+   Report: Tanker ""Black Pearl"" observed at 12Â°30'N, 70Â°40'W. Heading 180Â°, speed 8 knots. Routine transit.
+   ```
+
+8. ```
+   Date: 2024-10-27
+   Time: 07:30 UTC
+   Location: Coastal Station Hotel
+   Report: Pleasure yacht entering Port Xavier. Length approx. 30 meters. No irregularities observed.
+   ```
+
+9. ```
+   Date: 2024-10-28
+   Time: 13:40 UTC
+   Location: Aerial Patrol India
+   Report: Oil slick detected at 13Â°20'N, 71Â°15'W. Approximately 500 meters in length. Source unknown.
+   ```
+
+10. ```
+    Date: 2024-10-29
+    Time: 05:05 UTC
+    Location: Patrol Vessel Juliet
+    Report: Unlit vessel spotted at 12Â°55'N, 70Â°30'W. Heading 090Â°, speed 6 knots. Investigating further.
+    ```
+
+### 1.2 Reconnaissance Notes (10 examples)
+
+[Note: These would typically be handwritten and require OCR. The text versions are provided here.]
+
+1. ```
+   Oct 20, 2024 - 16:45 local
+   Coastal post Delta: Small craft at 12Â°34'N, 70Â°56'W. Erratic movement, speed 5-15 knots. Investigate.
+   ```
+
+2. ```
+   Oct 21, 2024 - 09:30 local
+   Aerial recon: Large cargo ship, possible smuggling. 13Â°10'N, 71Â°20'W. Heading 225Â°, speed 18 knots.
+   ```
+
+3. ```
+   Oct 22, 2024 - 14:15 local
+   Underwater sensor array: Submarine-like contact. 12Â°45'N, 70Â°40'W. Depth 150m, heading 180Â°.
+   ```
+
+4. ```
+   Oct 23, 2024 - 22:00 local
+   Night vision observation: Lights off shore, possible illegal fishing. 13Â°05'N, 71Â°10'W. Multiple vessels.
+   ```
+
+5. ```
+   Oct 24, 2024 - 11:20 local
+   Drone surveillance: Oil tanker approaching restricted area. 13Â°30'N, 71Â°45'W. Alert coastal patrols.
+   ```
+
+6. ```
+   Oct 25, 2024 - 08:45 local
+   Beach patrol: Suspicious debris washed ashore. 12Â°30'N, 70Â°20'W. Possible wreckage or contraband.
+   ```
+
+7. ```
+   Oct 26, 2024 - 19:30 local
+   Radar station: Fast-moving air contact, low altitude. 13Â°15'N, 71Â°30'W. Unable to establish communication.
+   ```
+
+8. ```
+   Oct 27, 2024 - 05:10 local
+   Dawn patrol: Two vessels rendezvousing at sea. 12Â°50'N, 70Â°50'W. Monitoring for potential transfer.
+   ```
+
+9. ```
+   Oct 28, 2024 - 13:00 local
+   Coastal camera: Unidentified submersible near reef. 13Â°20'N, 71Â°15'W. Unusual activity, possible research.
+   ```
+
+10. ```
+    Oct 29, 2024 - 17:40 local
+    High-altitude recon: Large-scale military exercise observed. 12Â°40'N to 13Â°10'N, 70Â°30'W to 71Â°00'W.
+    ```
+
+### 1.3 Communication Messages (10 examples)
+
+1. ```
+   FROM: PATROL BOAT BRAVO
+   TO: COMMAND CENTER
+   PRIORITY: URGENT
+   DTG: 201700Z OCT 24
+   1. DETECTED SUBMARINE PERISCOPE AT 13Â°45'N, 71Â°23'W AT 1645Z.
+   2. BEARING 270Â°, SPEED UNKNOWN.
+   3. LOST CONTACT AT 1652Z.
+   4. REQUEST IMMEDIATE AIR SUPPORT FOR AREA SEARCH.
+   5. WILL CONTINUE PATROL AND REPORT ANY FURTHER SIGHTINGS.
+   ```
+
+2. ```
+   FROM: COASTAL STATION ALPHA
+   TO: ALL UNITS
+   PRIORITY: ROUTINE
+   DTG: 211030Z OCT 24
+   1. WEATHER ADVISORY: TROPICAL STORM APPROACHING.
+   2. EXPECTED TO REACH COORDINATES 13Â°00'N, 71Â°00'W BY 221200Z OCT 24.
+   3. ALL VESSELS ADVISED TO SEEK SHELTER OR AVOID AREA.
+   4. MAINTAIN HEIGHTENED AWARENESS AND REPORT ANY DISTRESS SIGNALS.
+   ```
+
+3. ```
+   FROM: AIR PATROL CHARLIE
+   TO: COMMAND CENTER
+   PRIORITY: IMMEDIATE
+   DTG: 221545Z OCT 24
+   1. SPOTTED VESSEL MATCHING DESCRIPTION OF WANTED SMUGGLING SHIP.
+   2. CURRENT POSITION 12Â°30'N, 70Â°45'W, HEADING 315Â°, SPEED 20 KNOTS.
+   3. VESSEL NAME: ""SHADOW RUNNER""
+   4. REQUEST PERMISSION TO INITIATE INTERCEPT AND BOARDING PROCEDURES.
+   ```
+
+4. ```
+   FROM: SUBMARINE DELTA
+   TO: FLEET COMMAND
+   PRIORITY: CONFIDENTIAL
+   DTG: 231200Z OCT 24
+   1. COMPLETED UNDERWATER MAPPING OF SECTOR 4.
+   2. DISCOVERED UNCHARTED SEAMOUNT AT 13Â°10'N, 71Â°05'W.
+   3. PEAK DEPTH 80 METERS BELOW SURFACE.
+   4. RECOMMEND UPDATING NAUTICAL CHARTS AND ISSUING NAVIGATION WARNING.
+   ```
+
+5. ```
+   FROM: PORT AUTHORITY XAVIER
+   TO: ALL MARITIME UNITS
+   PRIORITY: ROUTINE
+   DTG: 241400Z OCT 24
+   1. PORT CLOSURE DUE TO MAINTENANCE.
+   2. EFFECTIVE 250600Z OCT 24 TO 270600Z OCT 24.
+   3. ALL SCHEDULED ARRIVALS TO BE DIVERTED TO PORT YANKEE.
+   4. EMERGENCY SERVICES WILL REMAIN OPERATIONAL.
+   ```
+
+6. ```
+   FROM: RESCUE COORDINATION CENTER
+   TO: ALL VESSELS IN VICINITY
+   PRIORITY: URGENT
+   DTG: 251830Z OCT 24
+   1. DISTRESS CALL RECEIVED FROM YACHT ""SERENITY""
+   2. LAST KNOWN POSITION 12Â°55'N, 70Â°40'W AT 251815Z OCT 24.
+   3. VESSEL REPORTING ENGINE FAILURE AND TAKING ON WATER.
+   4. ALL CAPABLE VESSELS REQUESTED TO ASSIST IN SEARCH AND RESCUE.
+   ```
+
+7. ```
+   FROM: ENVIRONMENTAL PROTECTION UNIT
+   TO: COMMAND CENTER
+   PRIORITY: IMMEDIATE
+   DTG: 261045Z OCT 24
+   1. OIL SPILL DETECTED AT 13Â°25'N, 71Â°20'W.
+   2. ESTIMATED SIZE: 2 SQUARE KILOMETERS AND EXPANDING.
+   3. SOURCE IDENTIFIED AS TANKER ""CRUDE CARRIER"".
+   4. REQUESTING IMMEDIATE DEPLOYMENT OF CONTAINMENT EQUIPMENT AND PERSONNEL.
+   ```
+
+8. ```
+   FROM: FISHERIES PATROL ECHO
+   TO: COASTAL ENFORCEMENT
+   PRIORITY: PRIORITY
+   DTG: 270830Z OCT 24
+   1. INTERCEPTED FISHING VESSEL ""LUCKY STAR"" IN PROTECTED MARINE RESERVE.
+   2. POSITION: 12Â°40'N, 70Â°30'W.
+   3. VESSEL UNCOOPERATIVE AND ATTEMPTING TO FLEE.
+   4. PURSUING AT 25 KNOTS, HEADING 045Â°.
+   5. REQUEST BACKUP FOR APPREHENSION.
+   ```
+
+9. ```
+   FROM: NAVAL INTELLIGENCE FOXTROT
+   TO: FLEET COMMAND
+   PRIORITY: SECRET
+   DTG: 281200Z OCT 24
+   1. INTERCEPTED COMMUNICATIONS SUGGEST POSSIBLE HOSTILE SUBMARINE ACTIVITY.
+   2. ESTIMATED AREA OF OPERATION: 12Â°30'N TO 13Â°00'N, 70Â°45'W TO 71Â°15'W.
+   3. RECOMMEND HEIGHTENED ASW OPERATIONS IN THE AREA.
+   4. FURTHER DETAILS TO FOLLOW ON SECURE CHANNEL.
+   ```
+
+10. ```
+    FROM: LIGHTHOUSE KEEPER GULF
+    TO: NAVIGATION WARNING OFFICE
+    PRIORITY: ROUTINE
+    DTG: 291600Z OCT 24
+    1. LIGHTHOUSE AT 13Â°05'N, 70Â°20'W UNDERGOING URGENT REPAIRS.
+    2. LIGHT WILL BE INOPERATIVE FROM 300001Z OCT 24 TO 302359Z OCT 24.
+    3. REQUEST ISSUANCE OF NOTICE TO MARINERS.
+    4. TEMPORARY LIGHTED BUOY TO BE PLACED 1 NM WEST OF LIGHTHOUSE.
+    ```
+
+## 2. Geographical Data
+
+```json
+{
+  ""maritime_zones"": [
+    {
+      ""name"": ""Restricted Area Alpha"",
+      ""type"": ""Military Exercise Zone"",
+      ""coordinates"": [
+        {""lat"": 12.5, ""lon"": 70.2},
+        {""lat"": 12.5, ""lon"": 70.8},
+        {""lat"": 13.1, ""lon"": 70.8},
+        {""lat"": 13.1, ""lon"": 70.2}
+      ]
+    },
+    {
+      ""name"": ""Protected Marine Reserve Beta"",
+      ""type"": ""Environmental Protection Zone"",
+      ""coordinates"": [
+        {""lat"": 13.2, ""lon"": 71.0},
+        {""lat"": 13.2, ""lon"": 71.4},
+        {""lat"": 13.6, ""lon"": 71.4},
+        {""lat"": 13.6, ""lon"": 71.0}
+      ]
+    },
+    {
+      ""name"": ""Territorial Waters"",
+      ""type"": ""Sovereign Territory"",
+      ""description"": ""Extends 12 nautical miles from the baseline""
+    },
+    {
+      ""name"": ""Contiguous Zone"",
+      ""type"": ""Limited Enforcement Zone"",
+      ""description"": ""Extends 24 nautical miles from the baseline""
+    },
+    {
+      ""name"": ""Exclusive Economic Zone"",
+      ""type"": ""Economic Rights Zone"",
+      ""description"": ""Extends 200 nautical miles from the baseline""
+    },
+    {
+      ""name"": ""Fishing Regulation Zone Charlie"",
+      ""type"": ""Fisheries Management"",
+      ""coordinates"": [
+        {""lat"": 12.7, ""lon"": 70.5},
+        {""lat"": 12.7, ""lon"": 71.0},
+        {""lat"": 13.0, ""lon"": 71.0},
+        {""lat"": 13.0, ""lon"": 70.5}
+      ]
+    },
+    {
+      ""name"": ""Port Approach Zone Xavier"",
+      ""type"": ""Vessel Traffic Service Zone"",
+      ""coordinates"": [
+        {""lat"": 13.4, ""lon"": 70.8},
+        {""lat"": 13.4, ""lon"": 71.2},
+        {""lat"": 13.7, ""lon"": 71.2},
+        {""lat"": 13.7, ""lon"": 70.8}
+      ]
+    },
+    {
+      ""name"": ""Submarine Exercise Area Delta"",
+      ""type"": ""Naval Training Zone"",
+      ""coordinates"": [
+        {""lat"": 12.3, ""lon"": 71.2},
+        {""lat"": 12.3, ""lon"": 71.6},
+        {""lat"": 12.7, ""lon"": 71.6},
+        {""lat"": 12.7, ""lon"": 71.2}
+      ]
+    },
+    {
+      ""name"": ""Oil Exploration Block Echo"",
+      ""type"": ""Resource Extraction Zone"",
+      ""coordinates"": [
+        {""lat"": 13.8, ""lon"": 70.4},
+        {""lat"": 13.8, ""lon"": 70.8},
+        {""lat"": 14.2, ""lon"": 70.8},
+        {""lat"": 14.2, ""lon"": 70.4}
+      ]
+    },
+    {
+      ""name"": ""Search and Rescue Region Foxtrot"",
+      ""type"": ""SAR Responsibility Zone"",
+      ""description"": ""Encompasses all maritime zones and extends to international waters""
+    }
+  ],
+  ""shipping_lanes"": [
+    {
+      ""name"": ""Northern Approach to Port Xavier"",
+      ""type"": ""Major Shipping Route"",
+      ""coordinates"": [
+        {""lat"": 13.5, ""lon"": 71.0},
+        {""lat"": 13.2, ""lon"": 70.5}
+      ]
+    },
+    {
+      ""name"": ""Southern Trade Route"",
+      ""type"": ""International Shipping Lane"",
+      ""coordinates"": [
+        {""lat"": 12.0, ""lon"": 70.0},
+        {""lat"": 12.5, ""lon"": 71.5}
+      ]
+    },
+    {
+      ""name"": ""Coastal Ferry Route Alpha"",
+      ""type"": ""Domestic Passenger Route"",
+      ""coordinates"": [
+        {""lat"": 13.0, ""lon"": 70.2},
+        {""lat"": 13.5, ""lon"": 70.3},
+        {""lat"": 14.0, ""lon"": 70.4}
+      ]
+    },
+    {
+      ""name"": ""Oil Tanker Channel Bravo"",
+      ""type"": ""Hazardous Cargo Route"",
+      ""coordinates"": [
+        {""
+"
