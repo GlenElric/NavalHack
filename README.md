@@ -1,4 +1,4 @@
-# 🛡️ VarunNetra — Maritime Situational Awareness System
+# 🛡️ VarunNetra: Maritime Situational Awareness System
 
 > **Advanced Naval Intelligence Platform** | Real-time Maritime Surveillance | AI-Powered Analysis
 
