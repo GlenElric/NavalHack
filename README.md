@@ -18,6 +18,20 @@ A comprehensive naval intelligence platform that uses **RAG (Retrieval-Augmented
 - **Full-Stack Intelligence**: Seamlessly integrated Flask backend analytics with an interactive React SPA visualization.
 - **Document Scanning**: Upload and scan images, PDFs, or DOCX files for maritime intelligence extraction.
 
+## 📸 Screenshots
+
+Here is a glimpse of the VarunNetra interface in action:
+
+<p align="center">
+  <img src="preview/Screenshot%202026-03-02%20230526.png" alt="VarunNetra Tactical Map" width="800" />
+</p>
+<p align="center">
+  <img src="preview/Screenshot%202026-03-02%20230554.png" alt="Intelligence Analysis View" width="800" />
+</p>
+<p align="center">
+  <img src="preview/Screenshot%202026-03-02%20230618.png" alt="VarunNetra Dashboard" width="800" />
+</p>
+
 ---
 
 ## 🏗️ Architecture
