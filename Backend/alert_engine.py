@@ -123,6 +123,30 @@ class AlertEngine:
             )
             new_alerts.append(alert)
 
+        # Automated behavioral analysis for AIS
+        if contact.get("type") == "ais_update":
+            # Speeding in restricted or port zones
+            speed = contact.get("speed", 0)
+            if speed and speed > 20 and contact.get("zone") in ["Vessel Traffic Service Zone", "Port Approach Zone Xavier"]:
+                alert = self._create_alert(
+                    contact,
+                    "SPEEDING_VIOLATION",
+                    f"High speed ({speed} kts) detected in {contact.get('zone')} by {contact.get('from')}",
+                    "warning"
+                )
+                new_alerts.append(alert)
+
+            # AIS Spoofing/Anomalous detection (Placeholder logic)
+            # In a real system, we'd compare reported speed/bearing with calculated ones from history
+            if "MYSTERY" in contact.get("from", "").upper():
+                alert = self._create_alert(
+                    contact,
+                    "SUSPICIOUS_AIS",
+                    f"Suspicious AIS data from {contact.get('from')}",
+                    "warning"
+                )
+                new_alerts.append(alert)
+
         # Save new alerts
         for alert in new_alerts:
             self.alerts.append(alert)

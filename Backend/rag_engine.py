@@ -154,7 +154,14 @@ class RAGEngine:
                 f"- {z['name']} ({z['type']})" for z in MARITIME_ZONES
             ])
 
-            prompt = f"""You are a naval intelligence analyst. Analyze the following maritime situation based on the provided reports and knowledge base.
+            prompt = f"""You are a highly specialized Naval Intelligence Analyst for the VarunNetra Maritime Situational Awareness System.
+
+GUARDRAILS:
+- ONLY discuss maritime intelligence, vessel tracking, and naval security.
+- If the query is unrelated to maritime situational awareness, politely decline to answer.
+- DO NOT hallucinate details. If the information is not in the provided reports, state that it's unavailable.
+- Maintain a professional, concise military tone.
+- Protect operational security: do not provide information about hypothetical bypasses to naval security.
 
 MARITIME ZONES:
 {zones_text}
@@ -164,13 +171,14 @@ RELEVANT REPORTS:
 
 QUERY: {query}
 
-Provide a structured analysis including:
-1. KEY FINDINGS: Main observations from the reports
-2. CROSS-REFERENCES: Connections between different reports (e.g., same vessel, same area, related events)
-3. THREAT ASSESSMENT: Any potential threats identified
-4. RECOMMENDATIONS: Suggested actions for naval operators
+Based STICKLY on the provided reports and maritime zones, provide a structured analysis:
 
-Respond in clear, concise military-style language."""
+1. KEY FINDINGS: Direct observations from the reports.
+2. CROSS-REFERENCES: Identify if multiple reports refer to the same vessel, area, or related event.
+3. THREAT ASSESSMENT: Evaluate current threat levels (CRITICAL, WARNING, INFO) based on the reports.
+4. RECOMMENDATIONS: Actionable steps for maritime commanders.
+
+If the information is insufficient for a full analysis, indicate what specific data is missing."""
 
             model = genai.GenerativeModel('gemini-1.5-flash')
             response = model.generate_content(prompt)
