@@ -9,6 +9,7 @@ load_dotenv()
 
 # API Keys
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+AIS_STREAM_API_KEY = os.getenv("AIS_STREAM_API_KEY", "")
 
 # Paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))

@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { MapContainer, TileLayer, CircleMarker, Popup, Polygon, Polyline, useMap } from 'react-leaflet';
+import MarkerClusterGroup from 'react-leaflet-cluster';
 import axios from 'axios';
 import 'leaflet/dist/leaflet.css';
 
@@ -81,6 +82,8 @@ function App() {
   const [flyToCenter, setFlyToCenter] = useState(null);
   const [activeView, setActiveView] = useState('map');
   const [rightPanel, setRightPanel] = useState('details');
+  const [leftSidebarCollapsed, setLeftSidebarCollapsed] = useState(false);
+  const [rightPanelCollapsed, setRightPanelCollapsed] = useState(false);
   const [filterType, setFilterType] = useState(null);
   const [filterThreat, setFilterThreat] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -502,19 +505,19 @@ function App() {
             className={`nav-tab ${activeView === 'map' ? 'active' : ''}`}
             onClick={() => setActiveView('map')}
           >
-            🗺️ Tactical Map
+            Tactical Map
           </button>
           <button
             className={`nav-tab ${activeView === 'intel' ? 'active' : ''}`}
             onClick={() => setActiveView('intel')}
           >
-            🔍 Intel Query
+            Intel Query
           </button>
           <button
             className={`nav-tab ${activeView === 'scan' ? 'active' : ''}`}
             onClick={() => setActiveView('scan')}
           >
-            📡 Scan Report
+            Scan Report
           </button>
         </div>
 
@@ -542,7 +545,10 @@ function App() {
       {/* MAIN CONTENT */}
       <div className="main-content">
         {/* LEFT SIDEBAR - Contact List */}
-        <aside className="sidebar-left">
+        <aside className={`sidebar-left ${leftSidebarCollapsed ? 'collapsed' : ''}`}>
+          <div className="sidebar-toggle" onClick={() => setLeftSidebarCollapsed(!leftSidebarCollapsed)}>
+            {leftSidebarCollapsed ? '▶' : '◀'}
+          </div>
           <div className="sidebar-header">
             <div className="sidebar-title">
               Contacts ({contacts.length})
@@ -674,72 +680,77 @@ function App() {
                   );
                 })}
 
-                {/* Contact Markers */}
-                {mapContacts.map((mc, i) => (
-                  <CircleMarker
-                    key={`contact-${i}`}
-                    center={[mc.lat, mc.lon]}
-                    radius={mc.threat_level === 'high' ? 8 : mc.threat_level === 'medium' ? 6 : 5}
-                    pathOptions={{
-                      color: TYPE_COLORS[mc.type] || '#ffffff',
-                      fillColor: THREAT_COLORS[mc.threat_level] || '#69f0ae',
-                      fillOpacity: 0.8,
-                      weight: 2,
-                    }}
-                    eventHandlers={{
-                      click: () => selectMapContact(mc)
-                    }}
-                  >
-                    <Popup>
-                      <div className="popup-content">
-                        <div className="popup-title">
-                          {CONTACT_ICONS[mc.type]} {mc.from}
-                        </div>
-                        {mc.vessel_name && (
-                          <div className="popup-row">
-                            <span className="popup-label">Vessel</span>
-                            <span className="popup-value">{mc.vessel_name}</span>
+                {/* Contact Markers with Clustering */}
+                <MarkerClusterGroup
+                  chunkedLoading
+                  maxClusterRadius={50}
+                >
+                  {mapContacts.map((mc, i) => (
+                    <CircleMarker
+                      key={`contact-${i}`}
+                      center={[mc.lat, mc.lon]}
+                      radius={mc.threat_level === 'high' ? 8 : mc.threat_level === 'medium' ? 6 : 5}
+                      pathOptions={{
+                        color: TYPE_COLORS[mc.type] || '#ffffff',
+                        fillColor: THREAT_COLORS[mc.threat_level] || '#69f0ae',
+                        fillOpacity: 0.8,
+                        weight: 2,
+                      }}
+                      eventHandlers={{
+                        click: () => selectMapContact(mc)
+                      }}
+                    >
+                      <Popup>
+                        <div className="popup-content">
+                          <div className="popup-title">
+                            {CONTACT_ICONS[mc.type]} {mc.from}
                           </div>
-                        )}
-                        <div className="popup-row">
-                          <span className="popup-label">Type</span>
-                          <span className="popup-value">{mc.type}</span>
-                        </div>
-                        <div className="popup-row">
-                          <span className="popup-label">Threat</span>
-                          <span className="popup-value" style={{ color: THREAT_COLORS[mc.threat_level] }}>
-                            {mc.threat_level?.toUpperCase()}
-                          </span>
-                        </div>
-                        {mc.speed && (
+                          {mc.vessel_name && (
+                            <div className="popup-row">
+                              <span className="popup-label">Vessel</span>
+                              <span className="popup-value">{mc.vessel_name}</span>
+                            </div>
+                          )}
                           <div className="popup-row">
-                            <span className="popup-label">Speed</span>
-                            <span className="popup-value">{mc.speed} kts</span>
+                            <span className="popup-label">Type</span>
+                            <span className="popup-value">{mc.type}</span>
                           </div>
-                        )}
-                        {mc.bearing != null && (
                           <div className="popup-row">
-                            <span className="popup-label">Bearing</span>
-                            <span className="popup-value">{mc.bearing}°</span>
+                            <span className="popup-label">Threat</span>
+                            <span className="popup-value" style={{ color: THREAT_COLORS[mc.threat_level] }}>
+                              {mc.threat_level?.toUpperCase()}
+                            </span>
                           </div>
-                        )}
-                        <div className="popup-row">
-                          <span className="popup-label">DTG</span>
-                          <span className="popup-value">{mc.dtg}</span>
-                        </div>
-                        {mc.zone && (
+                          {mc.speed && (
+                            <div className="popup-row">
+                              <span className="popup-label">Speed</span>
+                              <span className="popup-value">{mc.speed} kts</span>
+                            </div>
+                          )}
+                          {mc.bearing != null && (
+                            <div className="popup-row">
+                              <span className="popup-label">Bearing</span>
+                              <span className="popup-value">{mc.bearing}°</span>
+                            </div>
+                          )}
                           <div className="popup-row">
-                            <span className="popup-label">Zone</span>
-                            <span className="popup-value">{mc.zone}</span>
+                            <span className="popup-label">DTG</span>
+                            <span className="popup-value">{mc.dtg}</span>
                           </div>
-                        )}
-                        <div style={{ marginTop: 8, fontSize: 10, color: '#8899aa' }}>
-                          {mc.message_preview}
+                          {mc.zone && (
+                            <div className="popup-row">
+                              <span className="popup-label">Zone</span>
+                              <span className="popup-value">{mc.zone}</span>
+                            </div>
+                          )}
+                          <div style={{ marginTop: 8, fontSize: 10, color: '#8899aa' }}>
+                            {mc.message_preview}
+                          </div>
                         </div>
-                      </div>
-                    </Popup>
-                  </CircleMarker>
-                ))}
+                      </Popup>
+                    </CircleMarker>
+                  ))}
+                </MarkerClusterGroup>
               </MapContainer>
 
               {/* Map Overlay - Stats */}
@@ -910,7 +921,10 @@ function App() {
         </main>
 
         {/* RIGHT PANEL */}
-        <aside className="panel-right">
+        <aside className={`panel-right ${rightPanelCollapsed ? 'collapsed' : ''}`}>
+          <div className="panel-toggle" onClick={() => setRightPanelCollapsed(!rightPanelCollapsed)}>
+            {rightPanelCollapsed ? '◀' : '▶'}
+          </div>
           <div className="panel-right-header">
             <div className="panel-tabs">
               <button

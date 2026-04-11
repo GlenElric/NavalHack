@@ -8,10 +8,11 @@ import json
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from flask_socketio import SocketIO, emit
+from flask_talisman import Talisman
 
 from config import (
     DATA_DIR, CONTACTS_DB_PATH, MARITIME_ZONES,
-    SHIPPING_LANES, RAW_DATA_DIR
+    SHIPPING_LANES, RAW_DATA_DIR, AIS_STREAM_API_KEY
 )
 from data_parser import (
     parse_comm_message, parse_surveillance_log,
@@ -20,10 +21,22 @@ from data_parser import (
 from rag_engine import rag_engine
 from alert_engine import alert_engine
 from text_extractor import extract_text
+from ais_service import AISService
 
 # Initialize Flask
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
+
+# Security headers with Talisman
+csp = {
+    'default-src': '\'self\'',
+    'script-src': '\'self\' \'unsafe-inline\'',
+    'style-src': '\'self\' \'unsafe-inline\' https://unpkg.com',
+    'img-src': '\'self\' data: https://*.openstreetmap.org https://unpkg.com',
+    'connect-src': '\'self\' ws: wss: http://localhost:5000'
+}
+Talisman(app, content_security_policy=csp, force_https=False)
+
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Upload folder
@@ -34,11 +47,45 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max
 
 # In-memory contact storage
 contacts_store = []
+ais_service = None
+
+
+def handle_ais_update(contact):
+    """Callback for AIS service updates."""
+    global contacts_store
+
+    # Check if contact exists by MMSI
+    mmsi = contact.get("mmsi")
+    existing_idx = -1
+    for i, c in enumerate(contacts_store):
+        if c.get("mmsi") == mmsi:
+            existing_idx = i
+            break
+
+    if existing_idx >= 0:
+        # Update existing contact
+        contacts_store[existing_idx].update(contact)
+        contact = contacts_store[existing_idx]
+    else:
+        # Add new contact
+        contacts_store.append(contact)
+
+    # Evaluate for alerts
+    new_alerts = alert_engine.evaluate_contact(contact)
+
+    # Emit updates
+    socketio.emit('new_contact', contact)
+    for alert in new_alerts:
+        socketio.emit('new_alert', alert)
 
 
 def initialize_system():
     """Initialize the system with data from Maritime Situational Awareness directory."""
-    global contacts_store
+    global contacts_store, ais_service
+
+    # Initialize AIS Service
+    ais_service = AISService(api_key=AIS_STREAM_API_KEY, callback=handle_ais_update)
+    ais_service.start()
 
     # Try to load existing contacts
     if os.path.exists(CONTACTS_DB_PATH):
