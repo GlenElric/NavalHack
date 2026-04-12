@@ -291,8 +291,8 @@ def scan_document():
     # Generate alerts
     new_alerts = alert_engine.evaluate_contact(contact)
 
-    # Re-index RAG
-    rag_engine.build_index(contacts_store)
+    # Add to RAG index incrementally (Bolt optimization)
+    rag_engine.add_to_index(contact)
 
     # Save
     save_contacts()
@@ -329,8 +329,8 @@ def process_text():
     # Generate alerts
     new_alerts = alert_engine.evaluate_contact(contact)
 
-    # Re-index RAG
-    rag_engine.build_index(contacts_store)
+    # Add to RAG index incrementally (Bolt optimization)
+    rag_engine.add_to_index(contact)
 
     # Save
     save_contacts()

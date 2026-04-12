@@ -55,12 +55,38 @@ class RAGEngine:
 
         # Build FAISS index
         dimension = self.embeddings.shape[1]
-        self.index = faiss.IndexFlatIP(dimension)  # Inner product for cosine similarity
+        self.index = faiss.IndexFlatIP(dimension)  # Inner product for cosine sim
         self.index.add(self.embeddings.astype('float32'))
 
         # Save index
         self._save_index()
         print(f"FAISS index built with {self.index.ntotal} vectors")
+
+    def add_to_index(self, contact):
+        """Add a single contact to the FAISS index (incremental update)."""
+        if self.index is None:
+            # Fallback to building index if it doesn't exist
+            self.build_index([contact])
+            return
+
+        doc_text = self._contact_to_text(contact)
+
+        # Generate embedding for single document
+        embedding = embedding_model.encode(
+            [doc_text],
+            normalize_embeddings=True
+        ).astype('float32')
+
+        # Add to FAISS index (O(1) compared to rebuilding everything)
+        self.index.add(embedding)
+
+        # Update metadata and documents
+        self.documents.append(doc_text)
+        self.metadata.append(contact)
+
+        # Save updated state
+        self._save_index()
+        print(f"Contact added to FAISS index. Vectors: {self.index.ntotal}")
 
     def _contact_to_text(self, contact):
         """Convert a contact dict to a searchable text string."""
