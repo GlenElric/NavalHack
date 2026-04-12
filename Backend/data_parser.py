@@ -104,16 +104,25 @@ def classify_threat_level(text):
 
 
 def determine_zone(coords, zones):
-    """Determine which maritime zone a coordinate falls in."""
+    """
+    Determine which maritime zone a coordinate falls in.
+    Optimized with bounding box caching to avoid O(N) min/max calculations per call.
+    """
     if not coords:
         return None
     lat, lon = coords[0]["lat"], coords[0]["lon"]
     for zone in zones:
         if "coordinates" not in zone or len(zone["coordinates"]) < 3:
             continue
-        lats = [c["lat"] for c in zone["coordinates"]]
-        lons = [c["lon"] for c in zone["coordinates"]]
-        if min(lats) <= lat <= max(lats) and min(lons) <= lon <= max(lons):
+
+        # Bolt: Use cached bounding box for O(1) lookup
+        if "_bbox" not in zone:
+            lats = [c["lat"] for c in zone["coordinates"]]
+            lons = [c["lon"] for c in zone["coordinates"]]
+            zone["_bbox"] = (min(lats), max(lats), min(lons), max(lons))
+
+        min_lat, max_lat, min_lon, max_lon = zone["_bbox"]
+        if min_lat <= lat <= max_lat and min_lon <= lon <= max_lon:
             return zone["name"]
     return None
 
